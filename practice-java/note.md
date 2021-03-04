@@ -29,7 +29,7 @@ class Man {
     public static void main(String[] args){
         Man man01 = new Man(); // We have now created an object named man01 of the class Man
         man01.firstName = "Adam"; // firstName is a "public" field so we can set it in any method
-        System.out.println( man01.firstName);
+        System.out.println(man01.firstName);
     }
 }
 ```

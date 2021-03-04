@@ -6,6 +6,12 @@ public class Starter {
         System.out.println("Hello, World!");
     }
 
+    static void java() {
+        System.out.println("\nJava Version: " + System.getProperty("java.version"));
+        System.out.println("Java Runtime Version: " + System.getProperty("java.runtime.version"));
+        System.out.println("Java Home: " + System.getProperty("java.version"));
+        System.out.println("Java Class Path: " + System.getProperty("java.class.path") + "\n");
+    }
     static int addIntegers(int a, int b) {
         return(a + b);
     }
@@ -22,6 +28,10 @@ public class Starter {
     public static void main(String[] args) {
         greet();
 
+        // Check Java Env
+        java();
+
+        // Functions
         int result = addIntegers(3, 4);
         System.out.println(result);
 
