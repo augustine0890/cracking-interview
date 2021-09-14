@@ -7,7 +7,7 @@ func twoSum(nums []int, target int) []int {
 	for lo < hi {
 		sum := nums[lo] + nums[hi]
 		if sum == target {
-			return []int{lo, hi}
+			return []int{lo + 1, hi + 1}
 		}
 		if sum < target {
 			lo++
