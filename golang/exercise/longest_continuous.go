@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func maxLength(arr []int) int {
+	if len(arr) == 0 {
+		return 0
+	}
 	res := 1
 	incr, decr := 1, 1
 	for i := 1; i < len(arr); i++ {
