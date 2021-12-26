@@ -15,7 +15,7 @@ func maxLength(arr []int) int {
 				res = incr
 			}
 			decr = 1
-		} else {
+		} else if arr[i-1] > arr[i] {
 			decr++
 			if decr > res {
 				res = decr
@@ -27,6 +27,11 @@ func maxLength(arr []int) int {
 }
 
 func main() {
-	r := maxLength([]int{1, 5, 3, 2, 1, 3, 4, 5, 6})
-	fmt.Println(r)
+	r1 := maxLength([]int{1, 5, 3, 2, 1, 3, 4, 5, 6})
+	fmt.Println(r1)
+	r2 := maxLength([]int{1, 5, 3, 4, 6})
+	fmt.Println(r2)
+	r3 := maxLength([]int{5, 5, 5, 5, 5, 5})
+	fmt.Println(r3)
+
 }
