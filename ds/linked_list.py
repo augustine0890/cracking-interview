@@ -18,7 +18,7 @@ class LinkedList:
     if self.is_empty():
       self.head_node = temp_node
       return self.head_node
-    temp_node.next = self.head_node
+    temp_node.next_element = self.head_node
     self.head_node = temp_node
     return self.head_node
   
